@@ -1,55 +1,25 @@
 # Restaunax Technical Assessment - Order Management Dashboard 🍕🚀
 
-## Project Overview
+## Overview
 
-This project is a simplified full-stack restaurant order management dashboard built as part of the Restaunax Technical Assessment. It allows restaurant owners to manage orders efficiently by viewing order statuses, updating them, and handling different order types (delivery and pickup).
-
-The backend is powered by Node.js and Express, providing a RESTful API for orders. The frontend is built with React and Material UI, featuring a responsive and intuitive interface.
+This project is a full-stack order management dashboard built with Node.js/Express for the backend and React with Material UI for the frontend. It allows restaurant owners to view, create, and update orders in real time, managing statuses like pending, preparing, ready, and delivered.
 
 ---
 
-## Features
+## Setup and Run Instructions
 
-- **View orders by status:** pending, preparing, ready, delivered
-- **Detailed order view:** see customer info, items, total, and timestamps
-- **Update order status:** change status to reflect progress
-- **Create new orders:** via API for testing and development
-- **Mobile-responsive UI:** works well on desktop and mobile devices
-- **Mock data seeding:** generates sample orders with varying statuses and types
+### Backend
 
----
-
-## Project Structure
-
-restaunax-order-management/
-├── backend/ # Node.js/Express backend API
-│ ├── app.js # Main server file
-│ ├── routes/ # API route handlers
-│ ├── models/ # Data models or schema definitions (if any)
-│ ├── seed.js # Seed script to generate mock orders
-│ └── package.json
-├── frontend/ # React + Material UI frontend application
-│ ├── src/
-│ ├── public/
-│ └── package.json
-└── README.md # Project documentation
-
-### Prerequisites
-- Node.js (version 14+ recommended)
-- npm (comes with Node.js)
-
-### Backend Setup
-1. Navigate to the backend folder:
-
-```bash
-cd backend
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
 Install dependencies:
 
 bash
 Copy
 Edit
 npm install
-Seed the database (optional but recommended for testing):
+Seed initial mock data (optional):
 
 bash
 Copy
@@ -61,12 +31,10 @@ bash
 Copy
 Edit
 npm run dev
-(or node app.js if npm run dev is not configured)
+The server will run on http://localhost:5000.
 
-The backend API will run on http://localhost:5000 (default).
-
-Frontend Setup
-Navigate to the frontend folder:
+Frontend
+Navigate to the frontend directory:
 
 bash
 Copy
@@ -78,67 +46,26 @@ bash
 Copy
 Edit
 npm install
-Start the React development server:
+Start the React app:
 
 bash
 Copy
 Edit
 npm start
-The frontend will run on http://localhost:3000.
+The app will open at http://localhost:3000.
 
-API Endpoints
-Method	Endpoint	Description
-GET	/orders	List all orders (filter optional)
-GET	/orders/:id	Get details of a specific order
-PATCH	/orders/:id	Update order status
-POST	/orders	Create a new order
+Implementation Summary
+Backend: RESTful API with CRUD operations for orders using Express.
 
-Example Order JSON
-json
-Copy
-Edit
-{
-  "id": "ord_123456",
-  "customerName": "Alex Johnson",
-  "orderType": "delivery",
-  "status": "pending",
-  "total": 42.5,
-  "createdAt": "2024-05-07T18:30:00Z",
-  "items": [
-    {
-      "id": "item_1",
-      "name": "Margherita Pizza",
-      "quantity": 2,
-      "price": 15.99
-    },
-    {
-      "id": "item_2",
-      "name": "Caesar Salad",
-      "quantity": 1,
-      "price": 8.99
-    }
-  ]
-}
+Frontend: React app styled with Material UI components providing a responsive UI.
+
+Data Storage: In-memory data structure seeded with mock orders for simplicity.
+
+Features: Viewing orders by status, detailed order views, and status updates.
+
 Challenges Faced
-Synchronizing frontend state with backend updates
+Maintaining synchronization between frontend state and backend data.
 
-Designing an intuitive UI with Material UI that adapts to different screen sizes
+Designing a clean, mobile-responsive UI using Material UI.
 
-Structuring backend routes for clear, maintainable code
-
-Future Improvements
-Implement real-time updates with WebSockets or Server-Sent Events
-
-Add user authentication and role-based access control
-
-Enhance filtering and search capabilities on orders
-
-Containerize the application using Docker for easier deployment
-
-Add analytics dashboards with charts and order statistics
-
-License
-This project is licensed under the MIT License.
-
-Contact
-Created by CodyM33. For questions or feedback, please open an issue or contact me on GitHub.
+Structuring the backend API for clarity and extensibility.
