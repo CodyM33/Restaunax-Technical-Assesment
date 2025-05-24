@@ -20,13 +20,13 @@ npm install
 npm start         # open app on http://localhost:3000
 ```
 
-Implementation Overview
+###Implementation Overview
 
 The backend is built with Node.js and Express, providing RESTful API endpoints to manage orders — including creating, retrieving, and updating order statuses. For simplicity, data is stored in-memory and seeded with sample orders.
 
 The frontend is a React application styled with Material UI. It displays orders categorized by their status, allows viewing detailed order information, and supports updating order statuses. The UI is responsive, ensuring usability across desktop and mobile devices.
 
-Challenges
+###Challenges
 Keeping the frontend state in sync with the backend state
 
 Keeping a clean, mobile-friendly UI
