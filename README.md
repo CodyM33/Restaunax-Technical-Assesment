@@ -11,12 +11,14 @@ Allows restaurant owners to view, create, and update orders with real-time statu
 cd backend
 npm install
 npm run dev       # start server on http://localhost:5000
+```
 
-### Frontend
+### Frontend  
 ```bash
 cd frontend
 npm install
 npm start         # open app on http://localhost:3000
+```
 
 Implementation Highlights
 REST API for orders (CRUD) with Express
