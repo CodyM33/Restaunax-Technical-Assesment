@@ -13,45 +13,22 @@ This project is a full-stack order management dashboard built with Node.js/Expre
 1. Navigate to the backend directory:
    ```bash
    cd backend
+
 Install dependencies:
-
-bash
-Copy
-Edit
-npm install
-Seed initial mock data (optional):
-
-bash
-Copy
-Edit
-node seed.js
+   npm install
+Seed initial mock data:
+   node seed.js
 Start the backend server:
-
-bash
-Copy
-Edit
-npm run dev
+   npm run dev
+   
 The server will run on http://localhost:5000.
 
-Frontend
-Navigate to the frontend directory:
-
-bash
-Copy
-Edit
-cd frontend
+2. Navigate to the frontend directory:
+   cd frontend
 Install dependencies:
-
-bash
-Copy
-Edit
-npm install
+   npm install
 Start the React app:
-
-bash
-Copy
-Edit
-npm start
+   npm start
 The app will open at http://localhost:3000.
 
 Implementation Summary
