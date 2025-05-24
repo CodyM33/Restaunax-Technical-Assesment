@@ -1,4 +1,4 @@
-# Restaunax Order Management Dashboard 🍕🚀
+# Restaunax Order Management Dashboard
 
 ## Overview
 A full-stack order management system built with Node.js/Express and React with Material UI.  
@@ -27,8 +27,8 @@ The backend is built with Node.js and Express, providing RESTful API endpoints t
 The frontend is a React application styled with Material UI. It displays orders categorized by their status, allows viewing detailed order information, and supports updating order statuses. The UI is responsive, ensuring usability across desktop and mobile devices.
 
 Challenges
-Keeping frontend state synced with backend
+Keeping the frontend state in sync with the backend state
 
-Creating a clean, mobile-friendly UI
+Keeping a clean, mobile-friendly UI
 
-Designing scalable backend routes
+Designing scalable backend routes without bugs
