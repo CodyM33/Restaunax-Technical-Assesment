@@ -1,48 +1,35 @@
-# Restaunax Technical Assessment - Order Management Dashboard 🍕🚀
+# Restaunax Order Management Dashboard 🍕🚀
 
 ## Overview
+A full-stack order management system built with Node.js/Express and React with Material UI.  
+Allows restaurant owners to view, create, and update orders with real-time status tracking.
 
-This project is a full-stack order management dashboard built with Node.js/Express for the backend and React with Material UI for the frontend. It allows restaurant owners to view, create, and update orders in real time, managing statuses like pending, preparing, ready, and delivered.
-
----
-
-## Setup and Run Instructions
+## Setup & Run
 
 ### Backend
+```bash
+cd backend
+npm install
+npm run dev       # start server on http://localhost:5000
 
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
+### Frontend
+```bash
+cd frontend
+npm install
+npm start         # open app on http://localhost:3000
 
-Install dependencies:
-   npm install
-Seed initial mock data:
-   node seed.js
-Start the backend server:
-   npm run dev
-   
-The server will run on http://localhost:5000.
+Implementation Highlights
+REST API for orders (CRUD) with Express
 
-2. Navigate to the frontend directory:
-   cd frontend
-Install dependencies:
-   npm install
-Start the React app:
-   npm start
-The app will open at http://localhost:3000.
+Responsive React UI using Material UI
 
-Implementation Summary
-Backend: RESTful API with CRUD operations for orders using Express.
+In-memory data storage seeded with sample orders
 
-Frontend: React app styled with Material UI components providing a responsive UI.
+Features: view orders by status, order details, update status
 
-Data Storage: In-memory data structure seeded with mock orders for simplicity.
+Challenges
+Keeping frontend state synced with backend
 
-Features: Viewing orders by status, detailed order views, and status updates.
+Creating a clean, mobile-friendly UI
 
-Challenges Faced
-Maintaining synchronization between frontend state and backend data.
-
-Designing a clean, mobile-responsive UI using Material UI.
-
-Structuring the backend API for clarity and extensibility.
+Designing scalable backend routes
