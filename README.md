@@ -5,6 +5,7 @@ A full-stack order management system built with Node.js/Express and React with M
 Allows restaurant owners to view, create, and update orders with real-time status tracking.
 
 ## Setup & Run
+In your terminal (Bash in this example), navigate to your cloned repo.
 
 ### Backend
 ```bash
